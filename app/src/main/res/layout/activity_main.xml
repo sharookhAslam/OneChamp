@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bottom_layout_bg"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context=".presentation.MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_150dp"
+        android:background="@drawable/top_layout_gradient"
+        android:layout_weight="0.35"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.65"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/dim_100dp"
+        android:paddingStart="@dimen/dim_24"
+        android:paddingEnd="@dimen/dim_24"
+        android:paddingBottom="40dp">
+
+
+        <GridLayout
+            android:id="@+id/lt_grid_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="5"
+            android:rowCount="1"
+            android:columnOrderPreserved="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="@dimen/dim_0"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_columnWeight="1">
+
+                <ImageView
+                    android:id="@+id/iv_hole_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintBottom_toBottomOf="@+id/cv_hole_1"
+                    android:src="@drawable/holes_drawable" />
+
+                <com.example.onechamp.presentation.components.CardImageView
+                    android:layout_width="match_parent"
+                    app:layout_constraintStart_toStartOf="@id/iv_hole_1"
+                    app:layout_constraintEnd_toEndOf="@id/iv_hole_1"
+                    android:layout_height="@dimen/dim_130dp"
+                    android:layout_marginStart="@dimen/dim_24"
+                    android:visibility="invisible"
+                    android:layout_marginEnd="@dimen/dim_24"
+                    android:id="@+id/cv_hole_1"
+                    app:image="@drawable/fc_apple"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <FrameLayout
+                android:layout_width="@dimen/dim_0"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_columnWeight="1" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_row="0"
+                android:layout_column="2"
+                android:layout_width="@dimen/dim_0"
+                android:layout_columnWeight="1">
+
+                <ImageView
+                    android:id="@+id/iv_hole_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/holes_drawable"
+                    app:layout_constraintBottom_toBottomOf="@id/cv_hole_2"/>
+
+                <com.example.onechamp.presentation.components.CardImageView
+                    android:layout_width="match_parent"
+                    app:layout_constraintStart_toStartOf="@id/iv_hole_2"
+                    app:layout_constraintEnd_toEndOf="@id/iv_hole_2"
+                    android:layout_height="@dimen/dim_130dp"
+                    android:visibility="invisible"
+                    android:layout_marginStart="@dimen/dim_24"
+                    android:layout_marginEnd="@dimen/dim_24"
+                    android:id="@+id/cv_hole_2"
+                    app:image="@drawable/fc_apple"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <FrameLayout
+                android:layout_width="@dimen/dim_0"
+                android:layout_row="0"
+                android:layout_column="3"
+                android:layout_columnWeight="1" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="@dimen/dim_0"
+                android:layout_row="0"
+                android:layout_column="4"
+                android:layout_columnWeight="1">
+
+                <ImageView
+                    android:id="@+id/iv_hole_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintBottom_toBottomOf="@id/cv_hole_3"
+                    android:src="@drawable/holes_drawable" />
+
+                <com.example.onechamp.presentation.components.CardImageView
+                    android:layout_width="match_parent"
+                    app:layout_constraintStart_toStartOf="@id/iv_hole_3"
+                    app:layout_constraintEnd_toEndOf="@id/iv_hole_3"
+                    android:layout_height="@dimen/dim_130dp"
+                    android:layout_marginStart="@dimen/dim_24"
+                    android:visibility="invisible"
+                    android:layout_marginEnd="@dimen/dim_24"
+                    android:id="@+id/cv_hole_3"
+                    app:image="@drawable/fc_apple"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </GridLayout>
+
+        <GridLayout
+            android:id="@+id/lt_grid_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="5"
+            android:layout_marginTop="@dimen/dim_100dp"
+            android:columnOrderPreserved="true"
+            android:rowCount="1">
+
+            <FrameLayout
+                android:layout_width="@dimen/dim_0"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_columnWeight="1" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_width="@dimen/dim_0"
+                android:layout_columnWeight="1"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_hole_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintBottom_toBottomOf="@+id/cv_hole_4"
+                    android:src="@drawable/holes_drawable" />
+                <com.example.onechamp.presentation.components.CardImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_130dp"
+                    android:layout_marginEnd="@dimen/dim_24"
+                    android:layout_marginStart="@dimen/dim_24"
+                    android:id="@+id/cv_hole_4"
+                    app:layout_constraintStart_toStartOf="@id/iv_hole_4"
+                    app:layout_constraintEnd_toEndOf="@id/iv_hole_4"
+                    android:visibility="invisible"
+                    app:image="@drawable/fc_apple"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <FrameLayout
+                android:layout_width="@dimen/dim_0"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:layout_columnWeight="1" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_row="0"
+                android:layout_column="3"
+                android:layout_width="@dimen/dim_0"
+                android:layout_columnWeight="1">
+
+                <ImageView
+                    android:id="@+id/iv_hole_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintBottom_toBottomOf="@id/cv_hole_5"
+                    android:src="@drawable/holes_drawable" />
+
+                <com.example.onechamp.presentation.components.CardImageView
+                    android:layout_width="match_parent"
+                    app:layout_constraintStart_toStartOf="@id/iv_hole_5"
+                    app:layout_constraintEnd_toEndOf="@id/iv_hole_5"
+                    android:layout_height="@dimen/dim_130dp"
+                    android:layout_marginStart="@dimen/dim_24"
+                    android:layout_marginEnd="@dimen/dim_24"
+                    android:visibility="invisible"
+                    android:id="@+id/cv_hole_5"
+                    app:image="@drawable/fc_apple"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <FrameLayout
+                android:layout_width="@dimen/dim_0"
+                android:layout_row="0"
+                android:layout_column="4"
+                android:layout_columnWeight="1" />
+
+
+        </GridLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
